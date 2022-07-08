@@ -4,6 +4,9 @@
   --color-background: #e7f3ff;
 }
 
+/* get font awesome font pack */
+@import url('https://use.fontawesome.com/releases/v5.0.13/css/all.css');
+
 * {
   box-sizing: border-box;
 }
@@ -49,4 +52,33 @@ body {
 
 .menu a.active {
   font-weight: bold;
+}
+
+.menu button {
+  background-color: #003f5c;
+  color: #ffffff;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.menu button:hover span {
+  animation: spinPulse 1.4s infinite linear;
+}
+
+@keyframes spinPulse {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.4) rotate(180deg);
+  }
+
+  100% {
+    transform: scale(1) rotate(360deg);
+  }
 }

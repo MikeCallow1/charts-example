@@ -12,7 +12,7 @@ const Menu = () => {
             <a href={item.url} onClick={() => setPage(item.url)} className={item.url === page ? 'active' : ''}>{item.title}</a>
           </li>
         ))}
-        <li><button onClick={generate}>Regenerate Data</button></li>
+        <li><button onClick={generate}><span className="fa fa-sync-alt"></span></button></li>
       </ul>
     </>
   );
