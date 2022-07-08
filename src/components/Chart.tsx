@@ -5,6 +5,7 @@ import Recharts from "./Recharts";
 import { useNavigationContext } from "../contexts/NavigationContext";
 import PackageStats from './PackageStats';
 import '../css/chartLayout.css';
+import Overview from './Overview';
 
 const Chart = () => {
   const { page } = useNavigationContext();
@@ -25,6 +26,7 @@ const Chart = () => {
   return (
     <>
       <PackageStats />
+      <Overview />
       <ChartType />
     </>
   )

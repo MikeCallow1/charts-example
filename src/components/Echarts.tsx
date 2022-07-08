@@ -5,7 +5,6 @@ import { useDataContext } from "../contexts/DataContext";
 const Echarts = () => {
 
   const { data } = useDataContext();
-  console.log(data);
 
   const CHART_COLOURS = ['#003f5c', '#ffa600', '#bc5090', '#008607'];
 

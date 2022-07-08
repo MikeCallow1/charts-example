@@ -1,6 +1,6 @@
 :root {
   --color-primary: #1b1c38;
-  --color-secondary: #fafafa;
+  --color-secondary: #818181;
   --color-background: #e7f3ff;
 }
 
@@ -9,6 +9,7 @@
 }
 
 body {
+  color: var(--color-primary);
   background-color: var(--color-background);
 }
 
