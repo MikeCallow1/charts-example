@@ -112,6 +112,7 @@ const Echarts = () => {
     <>
       <div className="hero">
         <ReactECharts
+          style={{ width: '100%', height: '100%' }}
           option={option}
           notMerge={true}
           lazyUpdate={true}
@@ -152,7 +153,6 @@ const Echarts = () => {
         </div>
         <div className="grid-item">
           <ReactECharts
-            //merge options, but replace series type with bar:
             option={option2}
             notMerge={true}
             lazyUpdate={true}
@@ -160,7 +160,6 @@ const Echarts = () => {
         </div>
         <div className="grid-item">
           <ReactECharts
-            //merge options, but replace series type with bar:
             option={option3}
             notMerge={true}
             lazyUpdate={true}
