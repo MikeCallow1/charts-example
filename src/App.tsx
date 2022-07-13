@@ -14,9 +14,15 @@ function App() {
     { 'title': 'chart.js', 'url': '#chartjs' },
   ];
 
-  const currentPage = pages.find(page => window.location.hash === page.url)?.url ?? pages[0].url;
-  const [page, setPage] = React.useState(currentPage);
+  const getCurrentPage = () =>
+    pages.find(page => window.location.hash === page.url)?.url ?? pages[0].url;
+
+  const [page, setPage] = React.useState(getCurrentPage());
   const [data, setData] = React.useState(generateData());
+
+  React.useEffect(() => {
+    window.addEventListener('popstate', () => setPage(getCurrentPage()));
+  }, []);
 
   return (
     <NavigationContext.Provider value={{
