@@ -14,8 +14,10 @@ const PackageStats = () => {
           return 'recharts';
         case '#echarts':
           return 'echarts-for-react';
+        case '#chartjs':
+          return 'react-chartjs-2';
         default:
-          return 'chart.js';
+          return '';
       }
     }
 
